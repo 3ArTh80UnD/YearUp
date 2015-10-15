@@ -8,6 +8,7 @@ public class DayOfWeek
 		System.out.println("Enter a new day of the week:");
 		String dayOfWeek = sc.nextLine();
 		EvaluateDayOfWeek(dayOfWeek);
+		sc.close();
 	}
 
 	public static void EvaluateDayOfWeek(String dayOfWeek)
@@ -17,10 +18,10 @@ public class DayOfWeek
 			if (!dayOfWeek.isEmpty())
 			{
 				if(dayOfWeek.equalsIgnoreCase("Monday") ||
-						dayOfWeek.equalsIgnoreCase("Tuesday") ||
-						dayOfWeek.equalsIgnoreCase("Wednesday") ||
-						dayOfWeek.equalsIgnoreCase("Thursday") ||
-						dayOfWeek.equalsIgnoreCase("Friday"))
+				   dayOfWeek.equalsIgnoreCase("Tuesday") ||
+				   dayOfWeek.equalsIgnoreCase("Wednesday") ||
+				   dayOfWeek.equalsIgnoreCase("Thursday") ||
+				   dayOfWeek.equalsIgnoreCase("Friday"))
 				{
 					System.out.println(dayOfWeek + " is a weekday.");
 				}
