@@ -8,11 +8,10 @@ public class ChineseYear
 		boolean run = true;
 		while(run)
 		{
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the year:");
-		int inputYear = sc.nextInt();
-		EvaluateChineseYear(inputYear);
-		sc.close();
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter the year:");
+			int inputYear = sc.nextInt();
+			EvaluateChineseYear(inputYear);
 		}
 	}
 
@@ -20,7 +19,7 @@ public class ChineseYear
 	{
 		int yearDifference = inputYear - 1900;
 		int remainder = yearDifference % 12;
-		
+
 		switch(remainder)
 		{
 		case 0:
@@ -59,8 +58,8 @@ public class ChineseYear
 		case 11:
 			System.out.println(inputYear + " is the year of the pig.");
 			break;
-			default:
-				System.out.println("I cannot figure out the Chinese year for " + inputYear);
+		default:
+			System.out.println("I cannot figure out the Chinese year for " + inputYear);
 		}
 	}
 
