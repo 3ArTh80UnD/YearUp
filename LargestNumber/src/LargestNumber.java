@@ -1,14 +1,12 @@
 
 public class LargestNumber 
 {
-
 	public static void main(String[] args) 
 	{
 		int[] numbersArray = new int[] {-1, 34, 57, 89, 69, 72, -83};
 		FindLargestNumberUsingWhileLoop(numbersArray);
 		LargestNumberUsingForLoop(numbersArray);
 	}
-	
 	  public static void FindLargestNumberUsingWhileLoop(int[] numbers)
 	{
 		if (numbers != null)
@@ -44,13 +42,9 @@ public class LargestNumber
 					{
 						largestNumber = numbers[i];
 					}
-
 				}
 				 System.out.println("Largest number using while loop is " + largestNumber);
-
-			}
-			
+			}	
 		}
 	}
-
 }
