@@ -6,10 +6,10 @@ public class LargestNumber
 	{
 		int[] numbersArray = new int[] {-1, 34, 57, 89, 69, 72, -83};
 		FindLargestNumberUsingWhileLoop(numbersArray);
-		FindLargestNumberUsingForLoop(numbersArray);
+		LargestNumberUsingForLoop(numbersArray);
 	}
 	
-	public static void FindLargestNumberUsingWhileLoop(int[] numbers)
+	  public static void FindLargestNumberUsingWhileLoop(int[] numbers)
 	{
 		if (numbers != null)
 		{
@@ -17,8 +17,7 @@ public class LargestNumber
 			{
 				int i = 1;
 				int largestNumber = numbers[0];
-				
-				while (i < numbers.length);
+				while (i < numbers.length)
 				{
 					if (largestNumber < numbers[i])
 					{
@@ -26,11 +25,11 @@ public class LargestNumber
 					}
 					i++;
 				}
-				System.out.println("Largest number using while loop is " + largestNumber);
+				 System.out.println("Largest number using while loop is " + largestNumber);
 			}
 		}
 	}
-	public static void FindLargestNumberUsingForLoop(int[] numbers)
+	public static void LargestNumberUsingForLoop(int[] numbers)
 	{
 		if (numbers != null)
 		{
@@ -39,15 +38,16 @@ public class LargestNumber
 				int i = 1;
 				int largestNumber = numbers[0];
 				
-				for (i = 1; i < numbers.length; i++);
+				for (i = 1; i < numbers.length; i++)
 				{
 					if (largestNumber < numbers[i])
 					{
 						largestNumber = numbers[i];
 					}
-					System.out.println("Largest number using while loop is " + largestNumber);
 
 				}
+				 System.out.println("Largest number using while loop is " + largestNumber);
+
 			}
 			
 		}
