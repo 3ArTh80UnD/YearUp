@@ -63,6 +63,7 @@ public class Window1 {
 		frame.getContentPane().add(lblMyNameIs);
 		
 		textField = new JTextField();
+		textField.setHorizontalAlignment(SwingConstants.CENTER);
 		textField.setBounds(160, 25, 222, 26);
 		frame.getContentPane().add(textField);
 		textField.setColumns(10);
@@ -73,6 +74,7 @@ public class Window1 {
 		frame.getContentPane().add(lblIAm);
 		
 		textField_1 = new JTextField();
+		textField_1.setHorizontalAlignment(SwingConstants.CENTER);
 		textField_1.setBounds(160, 74, 222, 26);
 		frame.getContentPane().add(textField_1);
 		textField_1.setColumns(10);
