@@ -27,12 +27,15 @@ public class Playlist
 	public static void DisplayPlaylist()
 	//Prints out the song's name, rank, then artist.
 	{
-		for (int i = 0; i < m_song.length; i++)
+		if (m_song != null)
 		{
-			String name = m_song[i].GetName();
-			String artist = m_song[i].GetArtist();
-			int rank = m_song[i].GetRanking();
-			System.out.println("The song name is: " + name + ". " + "The song's rank is: " + rank + ". " + "The song's artist is: " + artist + ".");
+			for (int i = 0; i < m_song.length; i++)
+			{
+				String name = m_song[i].GetName();
+				String artist = m_song[i].GetArtist();
+				int rank = m_song[i].GetRanking();
+				System.out.println("The song name is: " + name + ". " + "The song's rank is: " + rank + ". " + "The song's artist is: " + artist + ".");
+			}
 		}
 	}
 }
