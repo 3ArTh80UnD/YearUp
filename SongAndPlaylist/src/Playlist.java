@@ -25,7 +25,7 @@ public class Playlist
 	}
 	
 	public static void DisplayPlaylist()
-	//Prints out the song's name, rank, then artist.
+	//Makes sure the array isn't null, then prints out the song's name, rank, then artist.
 	{
 		if (m_song != null)
 		{

@@ -36,6 +36,7 @@ public class Song
 	}
 	
 	public Song(int ranking, String name, String artist)
+	//Constructor for the Song class.
 	{
 		SetRank(ranking);
 		SetName(name);
