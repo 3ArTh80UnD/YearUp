@@ -5,8 +5,14 @@ public class EmptyString
 	
 	public boolean emptyString(String one)
 	{
-		m_emptyString = one.equals("");
-		return m_emptyString;
+		if (one != null)
+		{
+			m_emptyString = one.equals("");
+			return m_emptyString;		}
+		else
+		{
+			return false;
+		}
 	}
 
 
